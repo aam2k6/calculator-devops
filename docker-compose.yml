@@ -1,7 +1,6 @@
 services:
   calculator:
-    build: .
-    image: calculator:latest
+    image: aam2k6/calculator:${IMAGE_TAG:-latest}
     container_name: calculator
     restart: unless-stopped
     environment:
